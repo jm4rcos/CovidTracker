@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.info{
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    animation: info 1s ease-out;
+    transform: translate(-50%);
+}
+.info h4{
+    font-size: 24px;
+}
+.info h2{
+    font-size: 30px;
+}
+@keyframes info{
+    0%{
+        bottom: -100px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 50px;
+        opacity: 1;
+    }
+}
+.card{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.card:before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: black;
+}
+.globe{
+    font-size: 30px;
+    color: #000000;
+    position: absolute;
+    margin-left: 210px;
+    animation: globe 1s ease-out;
+    top: 42px;
+}
+@keyframes globe{
+    0%{
+        bottom: 320px;
+        opacity: 0;
+    }
+    100%{
+        bottom: 270px;
+        opacity: 1;
+    }
+}
+.contact{
+    font-size: 16px;
+    color: white;
+    padding: 20px 26px;
+    font-weight: 400;
+    border: 1px solid black;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: black;
+    right: 40px;
+    top: 40px;
+    list-style: none;
+    text-decoration: none;
+}
+@media (max-width: 700px){
+    .globe{
+        display: none;
+    }
+    .contact{
+        left: 50%;
+        transform: translate(-50%);
+        padding: 10px 16px;
+        width: 80px;
+        top: 20px;
+    }
+    .info h4{
+        font-size: 14px;
+    }
+    .info h2{
+        font-size: 20px;
+    }
+    .card{
+        margin-left: 10px;
+    }
+}
+.virus{
+    font-size: 60px;
+    color: rgba(255,255,255,0.6);
+    animation: virus 40s linear infinite;
+    position: absolute;
+    z-index: 0;
+}
+
+@keyframes virus{
+    0%{
+        transform: rotate(0deg);
+        top: 60px;
+    }
+    50%{
+        top: 400px
+    }
+    100%{
+        transform: rotate(360deg);
+        top: 60px;
+    }
+}
+.virus2{
+    font-size: 60px;
+    color: rgba(0,255,255,0.4);
+    animation: virus2 40s linear infinite;
+    position: absolute;
+    z-index: 0;
+    right: 60px;
+}
+
+@keyframes virus2{
+    0%{
+        transform: rotate(0deg);
+        top: 100px;
+    }
+    50%{
+        top: 200px
+    }
+    100%{
+        transform: rotate(360deg);
+        top: 100px;
+    }
+}
+.virus3{
+    font-size: 30px;
+    color: rgba(100,100,255,0.6);
+    animation: virus3 20s linear infinite;
+    position: absolute;
+    z-index: 0;
+    left: 250px;
+    bottom: 120px;
+}
+
+@keyframes virus3{
+    0%{
+        transform: rotate(0deg);
+        left: 250px
+    }
+    50%{
+        left: 200px
+    }
+    100%{
+        transform: rotate(360deg);
+        left: 250px
+    }
+}
