@@ -3,4 +3,3 @@ A COVID-19 tracker built with ReactJS and ChartJS
 
 https://cov19-tracker-reactjs.netlify.app/
 </br>
-[Imgur](https://imgur.com/0I4rJh3)
